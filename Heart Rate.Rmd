@@ -10,6 +10,29 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
+**Data Description**
+
+Personal Key Indicators of Heart Disease
+2020 annual CDC survey data of 400k adults related to their health status
+Target - HeartDisease - Yes / No
+Features
+BMI - Normal weight (18.5 <= BMI < 25.0)
+Smoking - Have you smoked at least 100 cigarettes in your entire life (approx. 5 packs)?
+AlcoholDrinking - Do you have more than 14 drinks of alcohol (men) or more than 7 (women) in a week?
+Stroke - Did you have a stroke?
+PhysicalHealth - For how many days during the past 30 days was your physical health not good?
+MentalHealth - For how many days during the past 30 days was your mental health not good?
+DiffWalking - Do you have serious difficulty walking or climbing stairs?
+Sex
+AgeCategory
+Race
+Diabetic
+PhysicalActivity - Have you played any sports (running, biking, etc.) in the past month?
+GenHealth - How can you define your general health?
+SleepTime - How many hours on average do you sleep?
+Asthma
+KidneyDisease
+SkinCancer
 
 ```{r}
 heart = read.csv('/Users/varunthallapelly/Desktop/One last time/sanjay/heart_2022_no_nans.csv')
