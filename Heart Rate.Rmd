@@ -1,0 +1,51 @@
+---
+title: "Heart Disease"
+output: html_document
+date: "2023-11-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r}
+heart = read.csv('/Users/varunthallapelly/Desktop/One last time/sanjay/heart_2022_no_nans.csv')
+hdp = heart
+```
+
+**Cheching null values**
+
+```{r}
+colSums(is.na(hdp))
+```
+
+There are No null values in the dataset
+
+**Checking duplicate data**
+
+```{r}
+sum(duplicated(hdp))
+```
+
+There are few duplicate rows in the dataset
+
+**Removing Duplicated rows from the dataset**
+
+```{r}
+hdp_unique = unique(hdp)
+sum(duplicated(hdp_unique))
+```
+
+```{r}
+dim(hdp_unique) #Dimension of the data
+```
+
+there are 40 variables and 246013 Observations
+
+```{r}
+
+```
+
